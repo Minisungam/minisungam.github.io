@@ -4,15 +4,22 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    max-width: 85%;
     justify-content: center;
     margin: auto;
     text-align: center;
-    border: 2px solid #E0E0E0;
+    border-left: 2px solid #E0E0E0;
+    border-right: 2px solid #E0E0E0;
     color: #E0E0E0;
     background-color: #121212;
 }
 
 header {
+    border-bottom: 2px solid #E0E0E0;
+    background-color: #1E1E1E;
+}
+
+nav {
     border-bottom: 2px solid #E0E0E0;
     background-color: #1E1E1E;
 }
@@ -25,5 +32,6 @@ main {
 }
 
 footer {
+    border-top: 2px solid #E0E0E0;
     background-color: #1E1E1E;
 }
