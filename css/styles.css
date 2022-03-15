@@ -1,11 +1,17 @@
 /* Christopher Magnus - 8799889 - cmagnus9889@conestogac.ca - Assignment 2 */
 
+@font-face {
+    font-family: NotoSans;
+    src: url(../content/NotoSans-Regular.ttf);
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {  
     display: flex;
+    font-family: NotoSans;
     flex-direction: column;
     min-height: 100vh;
     max-width: 85%;
