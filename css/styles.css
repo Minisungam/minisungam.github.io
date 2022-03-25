@@ -25,12 +25,15 @@ body {
 }
 
 header {
-    position: sticky;
+    display: flex;
+    flex-direction: row;
     border-bottom: 2px solid #E0E0E0;
     background-color: #1E1E1E;
 }
+
 header > img {
-    width: 360px;
+    width: 240px;
+    border-radius: 5%;
 }
 
 nav {
@@ -64,4 +67,82 @@ main {
 footer {
     border-top: 2px solid #E0E0E0;
     background-color: #1E1E1E;
+}
+
+.sectionContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill {
+    flex: 1;
+    margin: 20px;
+}
+
+.skill a, p, img {
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    color: #E0E0E0;
+    max-width: 300px;
+}
+
+#skills img {
+    height: 128px;
+    width: 128px;
+    object-fit: contain;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid #E0E0E0;
+}
+
+.project {
+    flex: 1;
+    margin: 20px;
+}
+
+.project a, p, img {
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    color: #E0E0E0;
+    max-width: 300px;
+}
+
+#projects img {
+    height: 128px;
+    width: 128px;
+    object-fit: contain;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid #E0E0E0;
+}
+
+.contactItem {
+    margin: 20px;
+}
+
+.contactItem a, p, img {
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    color: #E0E0E0;
+}
+
+#contact img {
+    height: 128px;
+    width: 128px;
+    object-fit: contain;
 }
