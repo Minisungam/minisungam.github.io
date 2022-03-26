@@ -37,12 +37,29 @@ $(document).ready(function() {
             content.classList.remove("stickyContent");
         }
     }
+
+    // Modals
+
+    const modalCalculator = document.querySelector("#modalCalculator");
+    const modalPatientNotes = document.querySelector("#modalPatientNotes");
+    const modalCar = document.querySelector("#modalCar");
+
+    $("#modalCalculatorBox").click(function() { 
+        modalCalculator.showModal(); 
+    })
+
+    $("#modalPatientNotesBox").click(function() { 
+        modalPatientNotes.showModal(); 
+    })
+
+    $("#modalCarBox").click(function() {
+        modalCar.showModal(); 
+    })
+
+    $(".closeModal").click(function() {
+        modalCalculator.close();
+        modalPatientNotes.close();
+        modalCar.close();
+    })
 })
 
-// Modals
-
-const modalCalculator = document.querySelector("#modalCalculator");
-const modalPatientNotes = document.querySelector("#modalPatientNotes");
-const modalCar = document.querySelector("#modalCar");
-
-$("#modalCalculatorBox").click(function() { modalCalculator.showModal() })
