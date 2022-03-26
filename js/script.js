@@ -7,20 +7,20 @@ $(document).ready(function(){
     // Sticky Navbar
     window.onscroll = function() { stickyNavbar() };
     var navbar = document.querySelector("nav");
-    var skills = document.querySelector("main")
+    var content = document.querySelector("#skills");
     var navPos = navbar.offsetTop;
 
     function stickyNavbar() 
     {
         if (window.pageYOffset >= navPos) 
         {
-            navbar.classList.add("sticky")
-            skills.classList.add("stickyContent")
+            navbar.classList.add("sticky");
+            content.classList.add("stickyContent");
         } 
         else 
         {
             navbar.classList.remove("sticky");
-            skills.classList.remove("stickyContent")
+            content.classList.remove("stickyContent");
         }
     }
 })
