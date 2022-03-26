@@ -13,16 +13,7 @@ $(document).ready(function() {
     var content = document.querySelector("#skills");
     var navPos = navbar.offsetTop;
 
-    if (window.pageYOffset >= navPos) 
-    {
-        navbar.classList.add("sticky");
-        content.classList.add("stickyContent");
-    } 
-    else 
-    {
-        navbar.classList.remove("sticky");
-        content.classList.remove("stickyContent");
-    }
+    stickyNavbar();
 
     function stickyNavbar() 
     {
