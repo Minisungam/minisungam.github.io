@@ -1,4 +1,4 @@
-/* Christopher Magnus - 8799889 - cmagnus9889@conestogac.ca - Assignment 2 */
+/* Christopher Magnus */
 
 @font-face {
     font-family: NotoSans;
@@ -29,11 +29,34 @@ header {
     flex-direction: row;
     border-bottom: 2px solid #E0E0E0;
     background-color: #1E1E1E;
+    background-image: url("../images/85.png");
+    /* Image: https://www.vecteezy.com/vector-art/1434369-hand-drawn-stars-pattern */
+    /* Image edited: Removed background. */
+    background-size: 500px;
+    background-repeat: repeat;
+    min-height: calc(100vh - 42px);
+    justify-content: center;
 }
 
-header > img {
+#headerContent {
+    display: flex;
+    flex-direction: row;
+    background: #1E1E1E;
+    border: 2px solid #E0E0E0;
+    border-radius: 30px;
+    height: fit-content;
+    width: fit-content;
+    padding: 20px;
+    margin-top: 25vh;
+}
+
+#headerText {
+    padding: 20px;
+}
+
+header img {
     width: 240px;
-    border-radius: 5%;
+    border-radius: 30px;
 }
 
 nav {
@@ -42,17 +65,25 @@ nav {
     padding: 10px;
 }
 
-nav > a {
+nav ul {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav a {
     font-size: 16px;
     margin-left: 10px;
     margin-right: 10px;
-    padding: 20px;
+    padding: 10px 20px 10px 20px;
     text-decoration: none;
     color: #E0E0E0;
     transition: 0.3s;
 }
 
-nav > a:hover {
+nav a:hover {
     color: #1E1E1E;
     background-color: #E0E0E0;
 }
@@ -67,6 +98,11 @@ main {
 footer {
     border-top: 2px solid #E0E0E0;
     background-color: #1E1E1E;
+    padding: 10px;
+}
+
+.sectionTitle h2 {
+    text-decoration: underline;
 }
 
 .sectionContent {
@@ -75,14 +111,20 @@ footer {
     justify-content: center;
 }
 
+.sectionContent p {
+    margin: 15px auto auto auto;
+    max-width: 500px;
+}
+
 #skills {
     display: flex;
     flex-direction: column;
+    min-height: 860px;
 }
 
 .skill {
     flex: 1;
-    margin: 20px;
+    margin: 50px;
 }
 
 .skill a, p, img {
@@ -90,7 +132,6 @@ footer {
     padding: 0%;
     text-decoration: none;
     color: #E0E0E0;
-    max-width: 300px;
 }
 
 #skills img {
@@ -103,6 +144,7 @@ footer {
     display: flex;
     flex-direction: column;
     border-top: 2px solid #E0E0E0;
+    min-height: 860px;
 }
 
 .project {
@@ -115,12 +157,11 @@ footer {
     padding: 0%;
     text-decoration: none;
     color: #E0E0E0;
-    max-width: 300px;
 }
 
 #projects img {
-    height: 128px;
-    width: 128px;
+    height: 256px;
+    width: 256px;
     object-fit: contain;
 }
 
@@ -145,4 +186,16 @@ footer {
     height: 128px;
     width: 128px;
     object-fit: contain;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-top: 2px solid #E0E0E0;
+    margin: 0px auto 42px auto;
+}
+
+.stickyContent {
+    padding-top: 100px;
 }
