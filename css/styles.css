@@ -107,6 +107,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 20vh;
 }
 
 .sectionContent p {
@@ -124,6 +125,12 @@ footer {
 .skill {
     flex: 1;
     margin: 50px;
+    height: fit-content;
+    width: fit-content;
+    border: 2px solid #E0E0E0;
+    border-radius: 30px;
+    padding: 25px;
+    min-height: 300px;
 }
 
 .skill a, p, img {
@@ -150,6 +157,11 @@ footer {
 .project {
     flex: 1;
     margin: 20px;
+    height: fit-content;
+    width: fit-content;
+    border: 2px solid #E0E0E0;
+    border-radius: 30px;
+    padding: 25px;
 }
 
 .project a, p, img {
@@ -175,6 +187,11 @@ footer {
 
 .contactItem {
     margin: 20px;
+    height: fit-content;
+    width: fit-content;
+    border: 2px solid #E0E0E0;
+    border-radius: 30px;
+    padding: 25px;
 }
 
 .contactItem a, p, img {
@@ -193,7 +210,7 @@ footer {
 .sticky {
     position: fixed;
     top: 0;
-    width: calc(100% - 15%) !important;
+    width: calc(85% - 20px) !important;
     border-top: 2px solid #E0E0E0;
     margin: 0px auto 42px auto;
 }
