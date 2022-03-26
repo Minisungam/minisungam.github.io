@@ -5,6 +5,8 @@
     src: url(../content/NotoSans-Regular.ttf);
 }
 
+/* Main tags */
+
 html {
     scroll-behavior: smooth;
 }
@@ -35,22 +37,6 @@ header {
     background-repeat: repeat;
     min-height: calc(100vh - 44px);
     justify-content: center;
-}
-
-#headerContent {
-    display: flex;
-    flex-direction: row;
-    background: #1E1E1E;
-    border: 2px solid #E0E0E0;
-    border-radius: 30px;
-    height: fit-content;
-    width: fit-content;
-    padding: 20px;
-    margin-top: 25vh;
-}
-
-#headerText {
-    padding: 20px;
 }
 
 header img {
@@ -97,6 +83,24 @@ footer {
     border-top: 2px solid #E0E0E0;
     background-color: #1E1E1E;
     padding: 10px;
+}
+
+/* Classes and IDs */
+
+#headerContent {
+    display: flex;
+    flex-direction: row;
+    background: #1E1E1E;
+    border: 2px solid #E0E0E0;
+    border-radius: 30px;
+    height: fit-content;
+    width: fit-content;
+    padding: 20px;
+    margin-top: 25vh;
+}
+
+#headerText {
+    padding: 20px;
 }
 
 .sectionTitle h2 {
@@ -164,17 +168,20 @@ footer {
     padding: 25px;
 }
 
-.project a, p, img {
-    margin: 0%;
-    padding: 0%;
-    text-decoration: none;
-    color: #E0E0E0;
+.project:hover {
+    background-color: #E0E0E0;
+    transition: 0.3s;
+}
+
+.project:hover p, .project:hover h3 {
+    color:#1E1E1E;
 }
 
 #projects img {
-    height: 256px;
-    width: 256px;
+    height: 100%;
+    width: 100%;
     object-fit: contain;
+    max-height: 225px;
 }
 
 #contact {
@@ -207,6 +214,16 @@ footer {
     object-fit: contain;
 }
 
+.contactItem:hover {
+    background-color: #E0E0E0;
+    transition: 0.3s;
+}
+.contactItem:hover p {
+    color:#1E1E1E;
+}
+
+/* Sticky Navbar */
+
 .sticky {
     position: fixed;
     top: 0;
@@ -218,3 +235,5 @@ footer {
 .stickyContent {
     margin-top: 40px;
 }
+
+/* Modals */
